@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.entities.User" table="User">
+        <id name="user_id" type="long" column="userid" access="field">
+            <generator class="native"/>
+        </id>
+        <property name="username" type="string" column="username" not-null="true"/>
+        <property name="password" type="string" column="password" not-null="true"/>
+        <property name="loginAttempts" type="integer" column="loginattempts" not-null="true"/> 
+        <property name="isLocked" type="yes_no" column="islocked" not-null="true"/>      
+    </class>
+</hibernate-mapping>

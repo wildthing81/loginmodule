@@ -1,0 +1,6 @@
+com\authentication\LDAPrincipal.class
+com\authentication\DBLoginModule.class
+com\rest\RESTLogin.class
+com\authentication\ErrorPrincipal.class
+com\authentication\PageLoginCallBackHandler.class
+com\entities\User.class
